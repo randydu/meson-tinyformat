@@ -16,6 +16,7 @@ The "revision" of gsl.wrap and the version of this meson-build project matches t
 meson-tinyformat |  tinyformat 
 -----------------|-----------
 v1.0              | v2.3.0
+v1.1              | v2.3.0 with new include style #include <tinyformat/tinyformat.h>
 
 
 ## Usage
@@ -40,7 +41,7 @@ executable('test', srcs, dependencies: [tfm_dep, ...])
 in main.c:
 
 ```c
-#include <tinyformat.h>
+#include <tinyformat/tinyformat.h>
 
 void foo(int x){
     tfm::printfln("Hello World");

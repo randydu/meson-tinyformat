@@ -6,6 +6,6 @@ add_library(tinyformat INTERFACE)
 include(GNUInstallDirs)
 
 install(TARGETS tinyformat EXPORT tinyformatConfig)
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/tinyformat.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/tinyformat)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/tinyformat/tinyformat.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/tinyformat)
 install(EXPORT tinyformatConfig DESTINATION lib/tinyformat)
 
